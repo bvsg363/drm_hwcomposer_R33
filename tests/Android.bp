@@ -1,0 +1,13 @@
+
+
+cc_test {
+    name: "hwc-drm-tests_R33",
+
+    srcs: ["worker_test.cpp"],
+
+    vendor: true,
+    header_libs: ["libhardware_headers"],
+    static_libs: ["libdrmhwc_utils_R33"],
+    shared_libs: ["hwcomposer.drm_R33"],
+    include_dirs: ["hardware/libhardware/modules/drm_hwcomposer_R33/include"],
+}
